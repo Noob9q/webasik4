@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Подключение Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QJ League | О лиге</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
 <body>
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
 
     <header class="header-section">
         <div class="header-container">
@@ -29,95 +31,168 @@
         </div>
     </header>
 
+    <!-- ОСНОВНОЙ КОНТЕНТ (Используем Bootstrap Grid и Cards) -->
     <main class="main-content-about-page">
-        <section class="about-info-section">
-            <div class="about-content-wrapper">
-                <div class="about-text-column">
-                    <h1>О лиге</h1>
-                    <p>FREEDOM QJ LEAGUE – проект Казахстанской Федерации Футбола, который уже сегодня создаёт будущее футбола Казахстана, применяя лучшие мировые стандарты в организации соревнований, образовании и аналитике.</p>
-                    <p>"Лучшая спортивная организация Казахстана" по версии "MetaRatings Top Awards" 2024 и 2025.</p>
-                    <div class="league-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">54</span>
-                            <span class="stat-label">Команды</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">542</span>
-                            <span class="stat-label">Матчей</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">1620</span>
-                            <span class="stat-label">Игроков</span>
+        <!-- Контейнер для центрирования контента и отступов -->
+        <div class="container my-5">
+            
+            <section class="about-info-section">
+                <!-- Row для разделения текста и карты (8/4) -->
+                <div class="row align-items-center g-4">
+                    
+                    <!-- Текстовый блок (8 колонок на больших экранах, 12 на мобильных) -->
+                    <div class="col-lg-8">
+                        <div class="p-3">
+                            <h1>О лиге</h1>
+                            <p>FREEDOM QJ LEAGUE – проект Казахстанской Федерации Футбола, который уже сегодня создаёт будущее футбола Казахстана, применяя лучшие мировые стандарты в организации соревнований, образовании и аналитике.</p>
+                            <p>"Лучшая спортивная организация Казахстана" по версии "MetaRatings Top Awards" 2024 и 2025.</p>
+                            
+                            <!-- Статистика: используем d-flex и gap для Flexbox -->
+                            <div class="d-flex flex-wrap gap-4 mt-4">
+                                <div class="text-center">
+                                    <h2 class="stat-number text-primary fs-1 fw-bold">54</h2>
+                                    <span class="stat-label text-muted d-block">Команды</span>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="stat-number text-primary fs-1 fw-bold">542</h2>
+                                    <span class="stat-label text-muted d-block">Матчей</span>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="stat-number text-primary fs-1 fw-bold">1620</h2>
+                                    <span class="stat-label text-muted d-block">Игроков</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-map-column">
-                    <img src="images/kazakhstan-map.png" alt="Карта Казахстана с расположением клубов" class="kazakhstan-map">
-                </div>
-            </div>
-        </section>
+                    
+                    <!-- Блок с картой (4 колонки на больших экранах) -->
+                    <div class="col-lg-4 text-center">
+                        <img src="images/kazakhstan-map.png" alt="Карта Казахстана с расположением клубов" class="img-fluid rounded shadow">
+                    </div>
 
-        <h2 class="section-title-qj">QJ League</h2>
-        <section class="single-image-section">
-            <div class="single-image-block">
-                <img src="images/qj-league-photo.jpg" alt="QJ League" class="main-about-photo">
-            </div>
-        </section>
+                </div>
+            </section>
+            
+            <h2 class="text-center my-5 section-title-qj">QJ League</h2>
+            
+            <section class="single-image-section mb-5">
+                <div class="text-center">
+                    <img src="images/qj-league-photo.jpg" alt="QJ League" class="img-fluid rounded shadow-lg">
+                </div>
+            </section>
 
-        <section class="management-section">
-            <h2>Руководство</h2>
-            <div class="management-cards">
-                <div class="manager-card">
-                    <img src="images/timur.jpg" alt="Тимур Турлов" class="manager-photo">
-                    <p class="manager-role">ПРЕДСЕДАТЕЛЬ ПОПЕЧИТЕЛЬСКОГО СОВЕТА</p>
-                    <p class="manager-name">Тимур Турлов</p>
-                </div>
-                <div class="manager-card">
-                    <img src="images/rokhus.jpg" alt="Рохус Шох" class="manager-photo">
-                    <p class="manager-role">ПРЕЗИДЕНТ</p>
-                    <p class="manager-name">Рохус Шох</p>
-                </div>
-                <div class="manager-card">
-                    <img src="images/aleksandr.jpg" alt="Александр Орлов" class="manager-photo">
-                    <p class="manager-role">ИСПОЛНИТЕЛЬНЫЙ ДИРЕКТОР</p>
-                    <p class="manager-name">Александр Орлов</p>
-                    <p class="manager-email">orlov@qjl.kz</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="management-section">
-            <h2>Блок организации и проведения соревнований</h2>
-            <div class="management-cards">
-                <div class="manager-card">
-                    <img src="images/kuandyk.jpg" alt="Куандык Ермекбаев" class="manager-photo">
-                    <p class="manager-role">РУКОВОДИТЕЛЬ БЛОКА ОРГАНИЗАЦИИ И ПРОВЕДЕНИЯ СОРЕВНОВАНИЙ</p>
-                    <p class="manager-name">Куандык Ермекбаев</p>
-                    <p class="manager-email">yermekbayev@qjl.kz</p>
-                </div>
-                <div class="manager-card">
-                    <img src="images/amir.jpg" alt="Амир Есеркепов" class="manager-photo">
-                    <p class="manager-role">TRAVEL-МЕНЕДЖЕР</p>
-                    <p class="manager-name">Амир Есеркепов</p>
-                    <p class="manager-email">yesserkeoov@qjl.kz</p>
-                </div>
-                <div class="manager-card">
-                    <img src="images/ramazan.jpg" alt="Рамазан Сагадат" class="manager-photo">
-                    <p class="manager-role">TRAVEL-СПЕЦИАЛИСТ</p>
-                    <p class="manager-name">Рамазан Сагадат</p>
-                    <p class="manager-email">sagadat@qjl.kz</p>
-                </div>
-            </div>
-        </section>
+            <!-- СЕКЦИЯ: Руководство (Используем Bootstrap Cards) -->
+            <section class="management-section my-5">
+                <h2 class="text-center mb-4">Руководство</h2>
+                
+                <!-- Адаптивная сетка карточек: 1 на мобильном, 2 на планшете, 3 на десктопе. g-4 для отступов. -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    
+                    <!-- Карточка 1: Тимур Турлов -->
+                    <div class="col">
+                        <div class="card h-100 shadow-lg text-center border-0">
+                            <img src="images/timur.jpg" alt="Тимур Турлов" class="card-img-top img-fluid mx-auto mt-3" style="width: 70%; height: auto; border-radius: 10px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-subtitle text-muted mb-1 manager-role">ПРЕДСЕДАТЕЛЬ ПОПЕЧИТЕЛЬСКОГО СОВЕТА</h6>
+                                    <h5 class="card-title fw-bold manager-name">Тимур Турлов</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Карточка 2: Рохус Шох -->
+                    <div class="col">
+                        <div class="card h-100 shadow-lg text-center border-0">
+                            <img src="images/rokhus.jpg" alt="Рохус Шох" class="card-img-top img-fluid mx-auto mt-3" style="width: 70%; height: auto; border-radius: 10px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-subtitle text-muted mb-1 manager-role">ПРЕЗИДЕНТ</h6>
+                                    <h5 class="card-title fw-bold manager-name">Рохус Шох</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3: Александр Орлов -->
+                    <div class="col">
+                        <div class="card h-100 shadow-lg text-center border-0">
+                            <img src="images/aleksandr.jpg" alt="Александр Орлов" class="card-img-top img-fluid mx-auto mt-3" style="width: 70%; height: auto; border-radius: 10px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-subtitle text-muted mb-1 manager-role">ИСПОЛНИТЕЛЬНЫЙ ДИРЕКТОР</h6>
+                                    <h5 class="card-title fw-bold manager-name">Александр Орлов</h5>
+                                    <p class="card-text manager-email"><a href="mailto:orlov@qjl.kz" class="text-decoration-none text-info">orlov@qjl.kz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- СЕКЦИЯ: Блок организации и проведения соревнований (Используем Bootstrap Cards) -->
+            <section class="management-section my-5">
+                <h2 class="text-center mb-4">Блок организации и проведения соревнований</h2>
+                
+                <!-- Адаптивная сетка карточек: 1 на мобильном, 2 на планшете, 3 на десктопе. g-4 для отступов. -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    
+                    <!-- Карточка 4: Куандык Ермекбаев -->
+                    <div class="col">
+                        <div class="card h-100 shadow-lg text-center border-0">
+                            <img src="images/kuandyk.jpg" alt="Куандык Ермекбаев" class="card-img-top img-fluid mx-auto mt-3" style="width: 70%; height: auto; border-radius: 10px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-subtitle text-muted mb-1 manager-role">РУКОВОДИТЕЛЬ БЛОКА ОРГАНИЗАЦИИ И ПРОВЕДЕНИЯ СОРЕВНОВАНИЙ</h6>
+                                    <h5 class="card-title fw-bold manager-name">Куандык Ермекбаев</h5>
+                                    <p class="card-text manager-email"><a href="mailto:yermekbayev@qjl.kz" class="text-decoration-none text-info">yermekbayev@qjl.kz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 5: Амир Есеркепов -->
+                    <div class="col">
+                        <div class="card h-100 shadow-lg text-center border-0">
+                            <img src="images/amir.jpg" alt="Амир Есеркепов" class="card-img-top img-fluid mx-auto mt-3" style="width: 70%; height: auto; border-radius: 10px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-subtitle text-muted mb-1 manager-role">TRAVEL-МЕНЕДЖЕР</h6>
+                                    <h5 class="card-title fw-bold manager-name">Амир Есеркепов</h5>
+                                    <p class="card-text manager-email"><a href="mailto:yesserkeoov@qjl.kz" class="text-decoration-none text-info">yesserkeoov@qjl.kz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 6: Рамазан Сагадат -->
+                    <div class="col">
+                        <div class="card h-100 shadow-lg text-center border-0">
+                            <img src="images/ramazan.jpg" alt="Рамазан Сагадат" class="card-img-top img-fluid mx-auto mt-3" style="width: 70%; height: auto; border-radius: 10px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-subtitle text-muted mb-1 manager-role">TRAVEL-СПЕЦИАЛИСТ</h6>
+                                    <h5 class="card-title fw-bold manager-name">Рамазан Сагадат</h5>
+                                    <p class="card-text manager-email"><a href="mailto:sagadat@qjl.kz" class="text-decoration-none text-info">sagadat@qjl.kz</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div> <!-- Конец .container -->
     </main>
 
-<footer class="footer-section">
-    <div class="text-center">
-        <p class="mb-1">Студенты: Zhumadulla Nurbolat, Azamat Oralkhan</p>
-        <p class="mb-0">© 2025 QJ League | Все права защищены</p>
-    </div>
-</footer>
+    <footer class="footer-section">
+        <div class="text-center container">
+            <!-- text-center и mb-1/mb-0 — это классы Bootstrap для выравнивания и отступов -->
+            <p class="mb-1">Студенты: Zhumadulla Nurbolat, Azamat Oralkhan</p>
+            <p class="mb-0">© 2025 QJ League | Все права защищены</p>
+        </div>
+    </footer>
 
 </body>
 </html>
